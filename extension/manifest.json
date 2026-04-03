@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "레딧브라우저",
+  "version": "1.1.0",
+  "description": "Reddit 전문 브라우저 자동화 — 카르마 빌드, 시딩, 캠페인 자동 실행",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "debugger",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

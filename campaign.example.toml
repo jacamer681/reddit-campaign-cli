@@ -1,0 +1,48 @@
+# Reddit 30-Day Marketing Campaign Configuration
+# 이 파일을 campaign.toml로 복사하고 자신의 제품/서비스에 맞게 수정하세요.
+#
+#   cp campaign.example.toml campaign.toml
+
+[product]
+name = "My Product"                              # 제품/서비스 이름
+url = "https://github.com/user/product"          # 제품 URL (GitHub, 웹사이트 등)
+tagline = "A short description of your product"  # 한 줄 소개
+category = "developer_tool"                      # developer_tool, saas, app, service, community
+
+[reddit]
+username = "MyRedditUser"  # 사용할 Reddit 계정 (크롬에서 로그인 필요)
+
+[targets]
+# 카르마 빌딩 서브레딧 — 제품 언급 없이 도움이 되는 댓글을 달 곳
+karma_subs = [
+    {sub = "commandline", keywords = ["terminal", "cli tools", "shell"]},
+    {sub = "programming", keywords = ["developer tools", "productivity"]},
+    {sub = "webdev", keywords = ["frontend", "dev experience"]},
+    {sub = "linux", keywords = ["terminal emulator", "desktop linux"]},
+    {sub = "opensource", keywords = ["open source", "new project"]},
+]
+
+# 씨뿌리기 서브레딧 — 자연스럽게 제품을 언급할 곳
+seed_subs = [
+    {sub = "commandline", keywords = ["terminal alternative", "tmux"]},
+    {sub = "SideProject", keywords = ["side project", "indie dev"]},
+    {sub = "webdev", keywords = ["developer tools", "terminal setup"]},
+]
+
+# 포스팅 서브레딧 — 직접 포스트를 올릴 곳 (작은 곳부터 큰 곳 순서)
+post_subs = [
+    {sub = "SideProject", title_hint = "Show: sharing my project"},
+    {sub = "commandline", title_hint = "CLI workflow improvement"},
+    {sub = "programming", title_hint = "Developer tool introduction"},
+]
+
+[content]
+karma_tone = "helpful_expert"   # helpful_expert, friendly_user, curious_learner
+seed_tone = "casual_mention"    # casual_mention, experience_share, comparison
+
+[limits]
+karma_comments_per_day = 4      # 하루 카르마 댓글 수
+seed_comments_per_day = 2       # 하루 씨뿌리기 댓글 수
+posts_per_day = 1               # 하루 포스트 수
+min_delay_seconds = 90          # 액션 간 최소 대기 (초)
+max_delay_seconds = 180         # 액션 간 최대 대기 (초)

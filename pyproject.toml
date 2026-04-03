@@ -1,0 +1,14 @@
+[project]
+name = "redit-market"
+version = "0.1.0"
+description = "Reddit 30-Day Campaign CLI — 브라우저 자동화"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+    "websockets>=12.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

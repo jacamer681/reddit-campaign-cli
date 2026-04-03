@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.egg
+
+# Campaign personal data (DO NOT commit)
+campaign.toml
+config.toml
+
+# Runtime data (contains personal campaign data)
+data/
+
+# Campaign content (specific to your product - auto-generated)
+docs/reddit-30day/
+docs/CAMPAIGN-REVIEW.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution
+dist/
+build/
+
+# Claude
+.claude/
